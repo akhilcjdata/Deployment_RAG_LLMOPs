@@ -28,7 +28,7 @@ PROMPT=PromptTemplate(
 
 
 def get_llama2_llm():
-    llm=Bedrock(model_id="meta.llama2-13b-chat-v1",client=bedrock,model_kwargs={"maxTokens":512})
+    llm=Bedrock(model_id="meta.llama3-1-8b-instruct-v1:0",client=bedrock,model_kwargs={"maxTokens":512})
     
     return llm
 
